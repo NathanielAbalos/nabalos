@@ -1,0 +1,324 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background: #081b29;
+    color: white;
+}
+.main{
+    padding-bottom: 40px;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #081b29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    z-index: 100;
+}
+
+header nav a{
+    margin-left: 55px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ededed;
+    font-weight: 500;
+    transition: all 0.4s ease;
+}
+header nav a:hover,
+header nav a.active{
+    color: #00abf0;
+
+}
+header .logo{
+    font-size: 25px;
+    text-decoration: none;
+    color: #ededed;
+    font-weight: 600;
+}
+.intro{
+    max-width: 600px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.intro h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+.intro h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+.intro p{
+    font-size: 16px;
+}
+#introBox{
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    margin-top: 70px;
+    scroll-margin-top: 70px;
+}
+#introBox .imageBox{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-top: 70px;
+    margin-left: 5%;
+    background-color: #1a90e4;
+    padding: 10px 10px 0 10px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    
+}
+#introBox .imageBox:hover{
+    transform: rotate(5deg);
+}
+#introBox img{
+    border-radius: 30%;
+    max-width: 340px;
+}
+#aboutMe{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 8%;
+    gap: 40px;
+    line-height: 35px;
+    scroll-margin-top: 70px;
+}
+#aboutMe .image{
+    float:left; 
+    margin-right: 15px;
+    width:650px;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+#aboutMe img{
+    height: 100%;
+    width: 20%; 
+    margin-right: 0px;
+    float: left;
+    transition: all 1.2s ease;
+}
+.slider{
+    position: relative;
+    width: 500%;
+    animation: 20s slide infinite;
+}
+@keyframes slide{
+    0%{
+        left: 0px;
+    }
+    20%{
+        left:0px;
+    }
+    25%{
+        left:-100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left:-300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+
+}
+.intro .buttonsBox{
+    margin-top: 15px;
+}
+.intro .checkOutButton{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    background: dodgerblue;
+    color: black;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+}
+.intro .checkOutButton:hover{
+    background-color: rgb(89, 89, 252);
+}
+.hamburger{
+    display: none;
+}
+#services{
+    color: #333;
+    background-color: rgb(252, 247, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 8%;
+    gap: 40px;
+    scroll-margin-top: 70px;
+}
+#aboutMe:hover ~ header nav a{
+    color: #00abf0;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 8%;
+    gap: 40px;
+    scroll-margin-top: 70px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.expertise-list {
+    list-style: none;
+    padding: 0;
+}
+
+.expertise-list li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 900px){
+    nav{
+        background: #081b29;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        transition: all 0.7s ease;
+        padding: 20px 0 20px 0;
+    }
+    header nav a{
+        margin-left: 0;
+    }
+    .show{
+        left: 0;
+    }
+    #introBox .imageBox{
+        margin: 70px auto 0 auto;
+        order: 1;
+    
+        
+    }
+    #introBox{
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .intro{
+        order: 2;
+        margin: 5px 0 30px 5px;
+        padding: 55px;
+        width: 100%;
+        max-width: 800px;
+
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .bun{
+        transition: all 0.5s ease;
+        display: block;
+        height: 3px;
+        width: 25px;
+        background-color: aqua;
+        margin: 5px auto;
+    }
+    .hamburger.active :nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active :nth-child(1){
+        transform: translateY(8px) rotate(405deg);
+    }
+    .hamburger.active :nth-child(3){
+        transform: translateY(-8px) rotate(315deg);
+    }
+    #aboutMe .image{
+        height: 280px;
+        width: 100%;
+    }
+    #aboutMe{
+        scroll-margin-top: 250px;
+    }
+    #services{
+        scroll-margin-top: 250px;
+    }
+    #contact{
+        scroll-margin-top: 250px;
+    }
+    #introBox{
+        scroll-margin-top: 250px;
+    }
+
+}
+@media(max-width: 600px){
+    #aboutMe img{
+        height: 280px;
+        max-width: 380px;
+    }
+    #introBox img{
+        width: 99%;
+    }
+    #introBox{
+        width: 100%;
+    }
+    .intro h1{
+        font-size: 40px;
+    }
+}
+@media(max-width: 460px){
+    #aboutMe .image{
+        height: 220px;
+    }
+}
+@media(max-width: 350px){
+    #aboutMe .image{
+        height: 180px;
+    }
+    .intro h1{
+        font-size: 38px;
+    }
+}
+@media (min-width: 1300px){
+    .intro{
+        max-width: 60%;
+    }
+
+}
