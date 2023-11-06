@@ -84,6 +84,8 @@ header .logo{
     padding: 10px 10px 0 10px;
     border-radius: 50%;
     transition: all 0.5s ease;
+    max-width: 340px;
+    width: 90%;
     
 }
 #introBox .imageBox:hover{
@@ -211,7 +213,7 @@ header .logo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 8%;
+    padding: 50px 0;
     gap: 40px;
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url("tux5.jpg");
     background-position: center;
@@ -237,29 +239,19 @@ header .logo{
     margin-bottom: 10px;
 }
 #carouselExample{
-    min-height: 500px; 
+    padding-top: 10px; 
+    min-height: 500px;
     overflow-y: hidden;
+    border-top: 1px solid black;
 }
 .d-block h3{
     text-align: center;
 }
-.d-block ul{
-    margin-top: 30px;
-}
-.checkmark-list {
-    list-style-type: none;
-  }
-  
-  .checkmark-list li:before {
-    content: '\2713'; 
-    margin-right: 10px; 
-  }
-  
 .carouselImg{
     background-position: center; 
     background-size: cover; 
-    width: 98%; 
-    max-width: 600px; 
+    width: 90%; 
+    max-width: 500px; 
     height: 300px; 
     margin: 10px auto 60px auto;
     border-radius: 15px;
