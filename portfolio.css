@@ -290,10 +290,10 @@ form input:hover{
 form textarea{
     width: 100%;
     border-radius: 12px;
-    height: 400px;
+    height: 200px;
     padding: 13px;
 }
-form button{
+form #submitButton{
     width: 150px;
 }
 
