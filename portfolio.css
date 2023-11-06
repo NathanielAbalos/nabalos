@@ -30,7 +30,7 @@ header{
 }
 
 header nav a{
-    margin-left: 55px;
+    margin-left: 45px;
     font-size: 18px;
     text-decoration: none;
     color: #ededed;
@@ -94,6 +94,38 @@ header .logo{
 #introBox img{
     border-radius: 30%;
     max-width: 340px;
+}
+.intro .socialLinks{
+    margin: 15px 0 0 0;
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.intro .socialLinks a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+    animation: 4s jump infinite;
+}
+.intro .socialLinks a{
+    color: black;
+    margin: 0;
+    display:inline-block;
+    line-height: 55px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: dodgerblue;
+    transition: all 0.3s ease;
+}
+.intro .socialLinks a:hover{
+    background-color: black;
+    color: white;
 }
 #aboutMe{
     background-color: white;
@@ -161,10 +193,10 @@ header .logo{
         transform: rotate(-0);
     }
     25%{
-        transform: rotate(3deg);
+        transform: rotate(10deg);
     }
     50%{
-        transform: rotate(-3deg);
+        transform: rotate(-10deg);
     }
     75%{
         transform: rotate(0);
@@ -206,23 +238,39 @@ header .logo{
     gap: 40px;
     scroll-margin-top: 70px;
 }
-#aboutMe:hover ~ header nav a{
-    color: #00abf0;
+#portfolio{
+    min-height: 400px;
+    scroll-margin-top: 70px;
+    min-height: 100vh;
 }
 #contact{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 50px 0;
     gap: 40px;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url("tux5.jpg");
+    background: white;
     background-position: center;
     background-size: cover;
     min-height: 400px;
+    padding-left: 60px;
+    padding-right: 60px;
     scroll-margin-top: 70px;
+    min-height: 100vh;
 }
 #contact h1{
-    text-shadow: 5px 5px 10px black;
+    color: black;
+    text-align: center;
+}
+.contactContent{
+    display: flex;
+}
+.contactImg{
+    min-width: 470px;
+    height: 500px;
+    background: url('tux.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
 }
 .container {
     max-width: 800px;
@@ -260,13 +308,11 @@ header .logo{
     max-width: 700px;
 }
 form{
-    background-color: #081b29;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     gap: 20px;
     border-radius: 30px;
-    border: 1px solid rgb(122, 124, 124);
     width: 100%;
     max-width: 700px;
 }
@@ -401,18 +447,24 @@ footer{
         width: 100%;
     }
     #aboutMe{
-        scroll-margin-top: 250px;
+        scroll-margin-top: 310px;
     }
     #services{
-        scroll-margin-top: 250px;
+        scroll-margin-top: 310px;
+    }
+    #portfolio{
+        scroll-margin-top: 310px;
     }
     #contact{
-        scroll-margin-top: 250px;
+        scroll-margin-top: 310px;
     }
     #introBox{
-        scroll-margin-top: 250px;
+        scroll-margin-top: 310px;
     }
 
+    .contactImg{
+        display: none;
+    }
 }
 @media(max-width: 600px){
     #aboutMe img{
@@ -437,6 +489,10 @@ footer{
         min-height: 700px; 
         overflow-y: hidden;
     }
+    #contact{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 @media(max-width: 350px){
     #aboutMe .image{
@@ -444,6 +500,11 @@ footer{
     }
     .intro h1{
         font-size: 38px;
+    }
+    .intro .socialLinks a{
+        margin: 0 ;
+        gap: 0;
+    
     }
 }
 @media (min-width: 1300px){
