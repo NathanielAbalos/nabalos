@@ -154,6 +154,24 @@ header .logo{
     }
 
 }
+@keyframes jump{
+    0%{
+        transform: rotate(-0);
+    }
+    25%{
+        transform: rotate(3deg);
+    }
+    50%{
+        transform: rotate(-3deg);
+    }
+    75%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(0);
+    }
+
+}
 .intro .buttonsBox{
     margin-top: 15px;
 }
@@ -166,6 +184,8 @@ header .logo{
     cursor: pointer;
     border: 2px solid white;
     border-radius: 10px;
+    position: relative;
+    animation: 3s jump infinite;
     transition: all 0.4s ease;
 }
 .intro .checkOutButton:hover{
@@ -193,7 +213,14 @@ header .logo{
     align-items: center;
     padding: 50px 8%;
     gap: 40px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url("tux5.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
     scroll-margin-top: 70px;
+}
+#contact h1{
+    text-shadow: 5px 5px 10px black;
 }
 .container {
     max-width: 800px;
@@ -208,6 +235,113 @@ header .logo{
 
 .expertise-list li {
     margin-bottom: 10px;
+}
+#carouselExample{
+    min-height: 500px; 
+    overflow-y: hidden;
+}
+.d-block h3{
+    text-align: center;
+}
+.d-block ul{
+    margin-top: 30px;
+}
+.checkmark-list {
+    list-style-type: none;
+  }
+  
+  .checkmark-list li:before {
+    content: '\2713'; 
+    margin-right: 10px; 
+  }
+  
+.carouselImg{
+    background-position: center; 
+    background-size: cover; 
+    width: 98%; 
+    max-width: 600px; 
+    height: 300px; 
+    margin: 10px auto 60px auto;
+    border-radius: 15px;
+}
+#contact h5{
+    max-width: 700px;
+}
+form{
+    background-color: #081b29;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 30px;
+    border: 1px solid rgb(122, 124, 124);
+    width: 100%;
+    max-width: 700px;
+}
+form input{
+    padding: 13px;
+    width: 90%;
+    max-width: 350px;
+    border-radius: 20px;
+}
+form input:hover{
+    background-color: rgb(197, 248, 197);
+}
+form textarea{
+    width: 100%;
+    border-radius: 12px;
+    height: 400px;
+    padding: 13px;
+}
+form button{
+    width: 150px;
+}
+
+footer{
+    margin-top: auto;
+    color: white;
+    width: 100%;
+}
+.footer1Container{
+    margin: 25px auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+.footer1Container h3{
+    font-family: 'Open Sans', sans-serif;
+}
+.footer1Container h2{
+    font-family: 'Open Sans', sans-serif;
+}
+.footer1Container h1{
+    font-family: 'Open Sans', sans-serif;
+}
+.footer1Container p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.footer1Container a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+.footer1Container .socialLinks a{
+    color: white;
+    margin:0px 10px 10px 10px;
+    display:inline-block;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: grey;
+    transition: all 0.3s ease;
+}
+.footer1Container .socialLinks a:hover{
+    background-color: black;
 }
 
 @media (max-width: 900px){
@@ -306,6 +440,10 @@ header .logo{
 @media(max-width: 460px){
     #aboutMe .image{
         height: 220px;
+    }
+    #carouselExample{
+        min-height: 700px; 
+        overflow-y: hidden;
     }
 }
 @media(max-width: 350px){
