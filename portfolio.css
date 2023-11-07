@@ -141,8 +141,8 @@ header .logo{
 #aboutMe .image{
     float:left; 
     margin-right: 15px;
-    width:650px;
-    height: 420px;
+    width:750px;
+    height: 440px;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -273,7 +273,8 @@ header .logo{
     overflow: hidden;
 }
 .container {
-    max-width: 800px;
+    max-width: 900px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -491,8 +492,29 @@ footer{
     }
     #contact{
         padding-left: 0;
+        padding-right:0;
+    }
+    #aboutMe{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    #services{
+        padding-left: 0;
         padding-right: 0;
     }
+    #portfolio{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #introBox{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .intro{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
 }
 @media(max-width: 350px){
     #aboutMe .image{
