@@ -48,6 +48,19 @@ header .logo{
     color: #ededed;
     font-weight: 600;
 }
+.robot{
+    height: 200px;
+    width: 200px;
+    transition: all 0.4s ease;
+    animation: 5s hovering infinite;
+}
+.robotBox{
+    position: absolute;
+    top: 70px;
+}
+.robotBox span{
+    width: 60%;
+}
 .intro{
     max-width: 600px;
     margin-top: 120px;
@@ -87,9 +100,6 @@ header .logo{
     max-width: 340px;
     width: 90%;
     
-}
-#introBox .imageBox:hover{
-    transform: rotate(5deg);
 }
 #introBox img{
     border-radius: 30%;
@@ -157,6 +167,24 @@ header .logo{
     position: relative;
     width: 500%;
     animation: 20s slide infinite;
+}
+@keyframes hovering{
+    0%{
+        transform: translateY(5px);
+    }
+    25%{
+        transform: translateY(-5px);
+        transform: rotate(4deg);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    75%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
 }
 @keyframes slide{
     0%{
@@ -470,10 +498,15 @@ footer{
 @media(max-width: 600px){
     #aboutMe img{
         height: 280px;
+    }
+    #aboutMe .image{
+        height: 280px;
         max-width: 380px;
+        width: 90%;
     }
     #introBox img{
-        width: 99%;
+        width: 89%;
+        height: 380px;
     }
     #introBox{
         width: 100%;
@@ -510,6 +543,7 @@ footer{
         padding-left: 0;
         padding-right: 0;
     }
+    
     .intro{
         padding-left: 8%;
         padding-right: 8%;
