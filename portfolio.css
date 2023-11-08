@@ -55,8 +55,11 @@ header .logo{
     animation: 5s hovering infinite;
 }
 .robotBox{
-    position: absolute;
-    top: 70px;
+    position: fixed;
+    bottom: 50px;
+    right: -170px;
+    animation: 60s peak infinite;
+    z-index: 100;
 }
 .robotBox span{
     width: 60%;
@@ -167,6 +170,28 @@ header .logo{
     position: relative;
     width: 500%;
     animation: 20s slide infinite;
+}
+@keyframes peak{
+    0%{
+        right: -170px;
+        transform: rotate(0deg);
+    }
+    5%{
+        right: -90px;
+        transform: rotate(-40deg);
+    }
+    50%{
+        right: -90px;
+        transform: rotate(-40deg);
+    }
+    95%{
+        right: -90px;
+        transform: rotate(-40deg);
+    }
+    100%{
+        right: -170px;
+        transform: rotate(0deg);
+    }
 }
 @keyframes hovering{
     0%{
@@ -561,6 +586,10 @@ footer{
         margin: 0 ;
         gap: 0;
     
+    }
+    #introBox img{
+        width: 99%;
+        height: 320px;
     }
 }
 @media (min-width: 1300px){
