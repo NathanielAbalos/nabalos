@@ -14,8 +14,10 @@
     </head>
     <body>
         <div class="robotBox">
+            <div class="speechBox bg-light text-dark p-2 rounded-5">
+                <h5>psst Lorem</h5>
+            </div>
             <img class="robot" src="robot.png">
-            
         </div>
         <div class="main">
             <header>
@@ -62,8 +64,8 @@
             </div>
             <div class="container p-md-0 p-4 d-flex flex-column">
                 <div class="container">
-                    <div class="d-flex justify-content-center gap-5">
-                            <img style="height: 120px; width: 120px;" src="uclogo.jpg">
+                    <div class="d-flex justify-content-center gap-md-5 gap-4">
+                            <img style="height: 120px; width: 140px;" src="uclogo.jpg">
                         
                             <img style="height: 120px; width: 120px;" src="centenniallogo.jpg">
                         
@@ -181,9 +183,43 @@
             </div>
             
         </section>
-        <section id="portfolio" class="p-5 text-center">
-            <h1>Projects</h1>
-           
+        <section id="portfolio" class="py-5 text-center">
+            <h1 class="mb-5">Projects</h1>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="col-md-4 col-xs mb-5 mx-auto">
+                        <iframe src="https://nathanielabalos.github.io/ctu" class="w-100 rounded-5 mb-5" style="height: 550px; width: 412px;"></iframe>
+                        <a class="text-white text-center" target="_blank" href="https://nathanielabalos.github.io/ctu">Visit Site</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-4 col-xs mb-5 mx-auto">
+                        <iframe src="https://nathanielabalos.github.io/blog" class="w-100 rounded-5 mb-5" style="height: 550px; width: 412px;"></iframe>
+                        <a class="text-white text-center" target="_blank" href="https://nathanielabalos.github.io/blog">Visit Site</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-4 col-xs mb-5 mx-auto">
+                        <iframe src="https://nathanielabalos.github.io/payrollCalc" class="w-100 rounded-5 mb-5" style="height: 550px; width: 412px;"></iframe>
+                        <a class="text-white text-center" target="_blank" href="https://nathanielabalos.github.io/payrollCalc">Visit Site</a>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
         <section id="contact" class="pb-5 pt-5">
             <h1>Contact</h1>
