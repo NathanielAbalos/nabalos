@@ -325,7 +325,7 @@ header .logo{
     border-radius: 15px;
     overflow: hidden;
 }
-.container {
+.container{
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
@@ -534,7 +534,7 @@ footer{
     }
     #introBox img{
         width: 89%;
-        height: 380px;
+        height: 370px;
     }
     #introBox{
         width: 100%;
@@ -550,15 +550,15 @@ footer{
             transform: rotate(0deg);
         }
         2%{
-            right: -50px;
+            right: -70px;
             transform: rotate(-40deg);
         }
         50%{
-            right: -50px;
+            right: -70px;
             transform: rotate(-40deg);
         }
         95%{
-            right: -50px;
+            right: -70px;
             transform: rotate(-40deg);
         }
         100%{
@@ -574,8 +574,8 @@ footer{
         padding-right:0;
     }
     #aboutMe{
-        padding-left: 4%;
-        padding-right: 4%;
+        padding-left: 0;
+        padding-right: 0;
     }
     #services{
         padding-left: 0;
@@ -595,8 +595,8 @@ footer{
         padding-right: 8%;
     }
     .robot{
-        height: 130px;
-        width: 130px;
+        height: 150px;
+        width: 150px;
     }
 
 }
