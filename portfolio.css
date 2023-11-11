@@ -70,6 +70,7 @@ header .logo{
     bottom: 250px;
     right: 0;
     max-width: 200px;
+    z-index: 100;
 }
 .flipback{
     max-width: 400px;
