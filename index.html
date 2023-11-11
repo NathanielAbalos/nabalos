@@ -13,10 +13,16 @@
         <script src="https://kit.fontawesome.com/3841f3c238.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="robotBox">
-            <div class="speechBox bg-light text-dark p-2 rounded-5">
-                <h5>psst Lorem</h5>
+        <div class="container mx-auto d-flex justify-content-center">
+            <div class="inputBox p-0 mb-4">
+                <input type="text" class="chatInput w-100 py-3 px-3 border border-dark" style="height: 60px;" placeholder="Enter Message">
+                <button type="button" class="sendButton btn btn-success rounded-0">Send</button>
             </div>
+        </div>
+        <div class="speechBox bg-light text-dark p-3 rounded-5 border border-dark">
+            <h5 class="botReply fs-6">Welcome to nabalos.com! Need help? <small>(click me)</small></h5>
+        </div>
+        <div class="robotBox">
             <img class="robot" src="robot.png">
         </div>
         <div class="main">

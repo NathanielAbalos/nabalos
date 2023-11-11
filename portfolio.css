@@ -53,17 +53,46 @@ header .logo{
     width: 200px;
     transition: all 0.4s ease;
     animation: 5s hovering infinite;
+    cursor: pointer;
+    position: relative;
 }
 .robotBox{
     position: fixed;
+    right: -85px;
+    transform: rotate(-40deg);
     bottom: 50px;
-    right: -170px;
-    animation: 60s peak infinite;
+    animation: 60s peak once;
     z-index: 100;
+    transition: all 0.6s ease;
 }
-.robotBox .speechBox{
+.speechBox{
+    position: fixed;
+    bottom: 250px;
+    right: 0;
+    max-width: 200px;
+}
+.flipback{
+    max-width: 400px;
+    transform: rotate(0deg);
+}
+.robotTalk{
+    transform: rotate(0deg);
+    right: -10px;
+}
+.inputBox{
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    box-shadow: 5px -5px 10px grey;
     width: min-content;
-    transform: rotate(30deg);
+    width: 90%;
+    max-width: 500px;
+    bottom: -200px;
+    position: fixed;
+    transition: all 0.5s ease;
+}
+.chatShow{
+    bottom: 0;
 }
 .intro{
     max-width: 600px;
@@ -172,26 +201,40 @@ header .logo{
     width: 500%;
     animation: 20s slide infinite;
 }
+@keyframes talk{
+    0%{
+        right: -60px;
+        transform: rotate(-40deg);
+    }
+    2%{
+        transform: rotate(0deg);
+        right: -10px;
+    }
+    100%{
+        transform: rotate(0deg);
+        right: 0px;
+    }
+}
 @keyframes peak{
     0%{
         right: -170px;
         transform: rotate(0deg);
     }
     2%{
-        right: -90px;
+        right: -60px;
         transform: rotate(-40deg);
     }
     50%{
-        right: -90px;
+        right: -60px;
         transform: rotate(-40deg);
     }
     95%{
-        right: -90px;
+        right: -60px;
         transform: rotate(-40deg);
     }
     100%{
-        right: -170px;
-        transform: rotate(0deg);
+        right: -60px;
+        transform: rotate(-40deg);
     }
 }
 @keyframes hovering{
@@ -551,15 +594,15 @@ footer{
             transform: rotate(0deg);
         }
         2%{
-            right: -70px;
+            right: -80px;
             transform: rotate(-40deg);
         }
         50%{
-            right: -70px;
+            right: -80px;
             transform: rotate(-40deg);
         }
         95%{
-            right: -70px;
+            right: -80px;
             transform: rotate(-40deg);
         }
         100%{
@@ -598,6 +641,12 @@ footer{
     .robot{
         height: 150px;
         width: 150px;
+    }
+    .robotBox{
+        bottom: 100px
+    }
+    .speechBox{
+        bottom: 250px;
     }
 
 }
