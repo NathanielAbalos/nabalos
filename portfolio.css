@@ -69,7 +69,7 @@ header .logo{
     position: fixed;
     bottom: 250px;
     animation: 60s peak once;
-    transform: rotate(-10deg)
+    transform: rotate(-10deg);
     right: 0;
     max-width: 200px;
     z-index: 100;
