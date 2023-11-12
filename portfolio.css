@@ -61,18 +61,20 @@ header .logo{
     right: -85px;
     transform: rotate(-40deg);
     bottom: 50px;
-    animation: 60s peak once;
+    animation: 1s peak 1;
     z-index: 100;
     transition: all 0.6s ease;
 }
 .speechBox{
     position: fixed;
     bottom: 220px;
-    animation: 60s peak once;
-    transform: rotate(-10deg);
-    right: 0;
+    right: 10px;
+    width: fit-content;
     max-width: 200px;
     z-index: 100;
+    transform: rotate(-10deg);
+    animation: 1s peakSpeech 1;
+    
 }
 .flipback{
     max-width: 400px;
@@ -223,21 +225,31 @@ header .logo{
         right: -170px;
         transform: rotate(0deg);
     }
-    5%{
-        right: -60px;
-        transform: rotate(-40deg);
-    }
-    50%{
-        right: -60px;
-        transform: rotate(-40deg);
-    }
-    95%{
-        right: -60px;
+    70%{
+        right: -85px;
         transform: rotate(-40deg);
     }
     100%{
-        right: -60px;
+        right: -85px;
         transform: rotate(-40deg);
+    }
+}
+@keyframes peakSpeech{
+    0%{
+        right: -170px;
+        transform: rotate(0deg);
+    }
+    70%{
+        right: 10px;
+        transform: rotate(-10deg);
+    }
+    95%{
+        right: 10px;
+        transform: rotate(-10deg);
+    }
+    100%{
+        right: 10px;
+        transform: rotate(-10deg);
     }
 }
 @keyframes hovering{
@@ -396,7 +408,7 @@ header .logo{
     text-align: center;
 }
 .card img{
-    height: 250px;
+    height: 220px;
 }
 .card{
     transition: all 0.5s ease;
@@ -564,7 +576,7 @@ footer{
     }
 
     .card img{
-        height: 200px;
+        height: 180px;
     }
     .contactImg{
         display: none;
@@ -596,21 +608,17 @@ footer{
             right: -170px;
             transform: rotate(0deg);
         }
-        2%{
-            right: -80px;
-            transform: rotate(-40deg);
-        }
-        50%{
-            right: -80px;
+        70%{
+            right: -85px;
             transform: rotate(-40deg);
         }
         95%{
-            right: -80px;
+            right: -85px;
             transform: rotate(-40deg);
         }
         100%{
-            right: -170px;
-            transform: rotate(0deg);
+            right: -85px;
+            transform: rotate(-40deg);
         }
     }
     #aboutMe .image{
@@ -647,9 +655,6 @@ footer{
     }
     .robotBox{
         bottom: 100px
-    }
-    .speechBox{
-        bottom: 250px;
     }
 
 }
