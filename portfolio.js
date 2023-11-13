@@ -7,6 +7,8 @@ const botReplyBox = document.querySelector(".botReply");
 const speechBox = document.querySelector(".speechBox");
 const inputBox = document.querySelector(".inputBox");
 const robotBox = document.querySelector(".robotBox");
+const xIcon = document.querySelectorAll(".xIcon");
+const detailsButton = document.querySelectorAll(".moreButton");
 
 const smartEndpoint = "https://chatapp-401002.wm.r.appspot.com";
 const loadingIndicator="loading...";
@@ -22,9 +24,25 @@ let conversation =[
 
 window.onload = function(){
     setTimeout(()=>{
-        speechBox.style.visibility = "hidden";
+        botReplyBox.innerHTML="Click me if you need help"
     }, 100);
+    setTimeout(()=>{
+        speechBox.style.visibility = "hidden";
+    }, 1800);
+
+    for(let x=0; x<xIcon.length; x++){
+        xIcon[x].addEventListener("click",()=>{
+            xIcon[x].parentElement.parentElement.style.display="none";
+        })
+    }
+
+    for(let x=0; x<detailsButton.length; x++){
+        detailsButton[x].addEventListener("click",()=>{
+            detailsButton[x].nextElementSibling.style.display="block";
+        })
+    }
 }
+
 
 burger.addEventListener("click", (event)=>{
  

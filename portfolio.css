@@ -61,7 +61,7 @@ header .logo{
     right: -85px;
     transform: rotate(-40deg);
     bottom: 50px;
-    animation: 1s peak 1;
+    animation: 3s peak 1;
     z-index: 100;
     transition: all 0.6s ease;
 }
@@ -73,7 +73,7 @@ header .logo{
     max-width: 200px;
     z-index: 100;
     transform: rotate(-10deg);
-    animation: 1s peakSpeech 1;
+    animation: 3s peakSpeech 1;
     
 }
 .flipback{
@@ -83,6 +83,12 @@ header .logo{
 .robotTalk{
     transform: rotate(0deg);
     right: -10px;
+}
+.appear{
+    display: none;
+}
+.info{
+    display: none;
 }
 .inputBox{
     display: flex;
@@ -206,20 +212,6 @@ header .logo{
     width: 500%;
     animation: 20s slide infinite;
 }
-@keyframes talk{
-    0%{
-        right: -60px;
-        transform: rotate(-40deg);
-    }
-    2%{
-        transform: rotate(0deg);
-        right: -10px;
-    }
-    100%{
-        transform: rotate(0deg);
-        right: 0px;
-    }
-}
 @keyframes peak{
     0%{
         right: -170px;
@@ -342,8 +334,8 @@ header .logo{
 }
 #services{
     color: #333;
-    background-color: rgb(252, 247, 247);
     display: flex;
+    background-color: rgb(252, 247, 247);
     flex-direction: column;
     align-items: center;
     padding: 50px 8%;
@@ -354,6 +346,11 @@ header .logo{
     min-height: 400px;
     scroll-margin-top: 70px;
     min-height: 100vh;
+}
+iframe{
+    height: 500px; 
+    max-width: 412px; 
+    width: 95%;
 }
 #contact{
     display: flex;
@@ -655,6 +652,9 @@ footer{
     }
     .robotBox{
         bottom: 100px
+    }
+    iframe{
+        height: 600px;
     }
 
 }
