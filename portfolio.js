@@ -9,6 +9,7 @@ const inputBox = document.querySelector(".inputBox");
 const robotBox = document.querySelector(".robotBox");
 const xIcon = document.querySelectorAll(".xIcon");
 const detailsButton = document.querySelectorAll(".moreButton");
+const card = document.querySelectorAll(".card");
 
 const smartEndpoint = "https://chatapp-401002.wm.r.appspot.com";
 const loadingIndicator="loading...";
@@ -39,6 +40,24 @@ window.onload = function(){
     for(let x=0; x<detailsButton.length; x++){
         detailsButton[x].addEventListener("click",()=>{
             detailsButton[x].nextElementSibling.style.display="block";
+        })
+    }
+
+    for(let x=0; x<card.length; x++){
+        card[x].addEventListener("click",()=>{
+
+            card[x].classList.toggle("flip");
+            card[x].firstElementChild.classList.toggle("gone");
+            card[x].lastElementChild.firstElementChild.classList.toggle("gone");
+            
+            if(card[x].lastElementChild.lastElementChild.style.display==="block"){
+                card[x].lastElementChild.lastElementChild.style.display="none";
+            }
+            else{
+                card[x].lastElementChild.lastElementChild.style.display="block";
+            }
+
+        
         })
     }
 }

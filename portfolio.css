@@ -84,11 +84,17 @@ header .logo{
     transform: rotate(0deg);
     right: -10px;
 }
-.appear{
-    display: none;
+.flip{
+    transform: rotateY(180deg);
 }
 .info{
     display: none;
+}
+.gone{
+    display: none;
+}
+.back{
+    display: block;
 }
 .inputBox{
     display: flex;
@@ -409,7 +415,14 @@ iframe{
 }
 .card{
     transition: all 0.5s ease;
-    
+    cursor: pointer;
+    backface-visibility: visible;
+
+}
+.cardBack{
+    display: none;
+    transform: rotateY(180deg);
+    height: 252px;
 }
 .card:hover{
     box-shadow: 3px 3px 7px grey;
