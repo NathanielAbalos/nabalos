@@ -417,7 +417,7 @@ iframe{
     transition: all 0.5s ease;
     cursor: pointer;
     backface-visibility: visible;
-
+    overflow: hidden;
 }
 .cardBack{
     display: none;
@@ -631,6 +631,9 @@ footer{
             transform: rotate(-40deg);
         }
     }
+    header .logo{
+        font-size: 19px;
+    }
     #aboutMe .image{
         height: 220px;
     }
@@ -656,7 +659,7 @@ footer{
     }
     
     .intro{
-        padding-left: 8%;
+        padding-left: 5%;
         padding-right: 8%;
     }
     .robot{
@@ -668,6 +671,9 @@ footer{
     }
     iframe{
         height: 600px;
+    }
+    .cardBack{
+        height: 212px;
     }
 
 }
