@@ -527,7 +527,7 @@ footer{
         left: 0;
     }
     #introBox .imageBox{
-        margin: 0 auto 0 auto;
+        margin: 40px auto 0 auto;
         order: 1;
     
         
@@ -538,8 +538,8 @@ footer{
     }
     .intro{
         order: 2;
-        margin: 5px 0 20px 5px;
-        padding: 55px;
+        margin: 5px 0 10px 5px;
+        padding: 15px 55px;
         width: 100%;
         max-width: 800px;
 
