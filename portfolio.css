@@ -599,7 +599,6 @@ footer{
     #aboutMe .image{
         height: 280px;
         max-width: 380px;
-        width: 90%;
     }
     #introBox img{
         width: 89%;
@@ -632,7 +631,7 @@ footer{
         }
     }
     header .logo{
-        font-size: 19px;
+        font-size: 21px;
     }
     #aboutMe .image{
         height: 220px;
