@@ -351,49 +351,24 @@ header .logo{
 #portfolio{
     min-height: 400px;
     scroll-margin-top: 70px;
-    min-height: 100vh;
 }
 iframe{
     height: 500px; 
     max-width: 412px; 
     width: 95%;
 }
-#contact{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    background: white;
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-    padding-left: 60px;
-    padding-right: 60px;
-    scroll-margin-top: 70px;
-    
-}
-#contact h1{
-    color: black;
-    text-align: center;
-}
-.contactContent{
-    display: flex;
-}
-.contactImg{
-    min-width: 470px;
-    height: 500px;
-    background: url('tux.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px;
-    overflow: hidden;
-}
-.container{
+#aboutMe .container{
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
-
+.cool{
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
 .expertise-list {
     list-style: none;
     padding: 0;
@@ -427,36 +402,17 @@ iframe{
 .card:hover{
     box-shadow: 3px 3px 7px grey;
 }
-#contact h5{
-    max-width: 700px;
-}
-form{
-    color: black;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-radius: 30px;
-    width: 100%;
-    max-width: 700px;
-}
-form input{
-    padding: 13px;
-    width: 90%;
-    max-width: 350px;
-    border-radius: 20px;
-}
+
 form input:hover{
     background-color: rgb(197, 248, 197);
 }
 form textarea{
     width: 100%;
-    border-radius: 12px;
+    border-radius: 8px;
     height: 200px;
     padding: 13px;
 }
-form #submitButton{
-    width: 150px;
-}
+
 
 footer{
     margin-top: auto;
@@ -586,7 +542,10 @@ footer{
     }
 
     .card img{
-        height: 180px;
+        height: 210px;
+    }
+    .cardBack{
+        height: 242px;
     }
     .contactImg{
         display: none;
@@ -659,7 +618,7 @@ footer{
     
     .intro{
         padding-left: 5%;
-        padding-right: 8%;
+        padding-right: 5%;
     }
     .robot{
         height: 150px;
@@ -670,9 +629,6 @@ footer{
     }
     iframe{
         height: 600px;
-    }
-    .cardBack{
-        height: 212px;
     }
 
 }
