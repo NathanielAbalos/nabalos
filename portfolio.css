@@ -608,7 +608,7 @@ footer{
         width: 100%;
     }
     .intro h1{
-        font-size: 48px;
+        font-size: 42px;
     }
 }
 @media(max-width: 460px){
