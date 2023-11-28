@@ -49,8 +49,8 @@ header .logo{
     font-weight: 600;
 }
 .robot{
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     transition: all 0.4s ease;
     animation: 5s hovering infinite;
     cursor: pointer;
@@ -199,16 +199,14 @@ header .logo{
     scroll-margin-top: 70px;
 }
 #aboutMe .image{
-    float:left; 
     margin-left: auto;
     margin-right: auto;
-    width:650px;
-    height: 340px;
+    height: 370px;
     overflow: hidden;
     border-radius: 20px;
 }
 #aboutMe img{
-    height: 100%;
+    height: 370px;
     width: 20%; 
     margin-right: 0px;
     float: left;
@@ -342,7 +340,6 @@ header .logo{
 #services{
     color: #333;
     display: flex;
-    background-color: rgb(252, 247, 247);
     flex-direction: column;
     align-items: center;
     padding: 50px 8%;
@@ -389,22 +386,28 @@ iframe{
 .d-block h3{
     text-align: center;
 }
-.card img{
+#services .card img{
+    height: 220px;
+}
+#aboutMe .card img{
     height: 220px;
 }
 .card{
     transition: all 0.5s ease;
-    cursor: pointer;
     backface-visibility: visible;
     overflow: hidden;
     background-color: transparent;
+    border: none;
+}
+#services .card{
+    cursor: pointer;
 }
 .cardBack{
     display: none;
     transform: rotateY(180deg);
     height: 252px;
 }
-.card:hover{
+#services .card:hover{
     box-shadow: 3px 3px 7px grey;
 }
 
@@ -572,7 +575,7 @@ footer{
         width: 100%;
     }
     .intro h1{
-        font-size: 42px;
+        font-size: 40px;
     }
 }
 @media(max-width: 460px){
