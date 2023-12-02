@@ -194,7 +194,8 @@ header .logo{
     color: white;
 }
 #aboutMe{
-    background-color: white;
+    background: white;
+    background-size: cover;
     color: black;
     display: flex;
     flex-direction: column;
@@ -494,7 +495,7 @@ footer{
 
 @media (max-width: 900px){
     nav{
-        background: #081b29;
+        background: black;
         position: absolute;
         width: 100%;
         top: 70px;
