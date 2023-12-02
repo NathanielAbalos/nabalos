@@ -10,10 +10,13 @@ html{
 body{
     display: flex;
     flex-direction: column;
-    background: #081b29;
+    background: linear-gradient(#081b29,#291908, black);
     color: white;
 }
 .main{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)) , url("pngwing.com.png");
+    background-size: cover;
+    
     padding-bottom: 40px;
 }
 header{
@@ -21,7 +24,7 @@ header{
     top: 0;
     width: 100%;
     padding: 20px 10%;
-    background: #081b29;
+    background: linear-gradient(#081b29, black);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -136,6 +139,9 @@ header .logo{
     padding: 0 10%;
     margin-top: 70px;
     scroll-margin-top: 70px;
+    background-position: left 45%;
+    background-size: cover;
+    
 }
 #introBox .imageBox{
     display: flex;
@@ -315,6 +321,15 @@ header .logo{
     }
 
 }
+@keyframes spin{
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+
+}
 .intro .buttonsBox{
     margin-top: 15px;
 }
@@ -357,6 +372,13 @@ iframe{
     height: 500px; 
     max-width: 380px; 
     width: 100%;
+    animation: 15s spin infinite;
+    transform: rotateX(90deg);
+}
+.projectIcon{
+    transform: rotateX(35deg);
+    animation: 15s spin infinite;
+    max-width: 100%;
 }
 #aboutMe .container{
     max-width: 1200px;
@@ -389,7 +411,7 @@ iframe{
 #services .card img{
     height: 220px;
 }
-#aboutMe .card img{
+#portfolio .card img{
     height: 220px;
 }
 .card{
@@ -426,6 +448,7 @@ footer{
     margin-top: auto;
     color: white;
     width: 100%;
+    background-color: #081b29;
 }
 .footer1Container{
     margin: 25px auto;
