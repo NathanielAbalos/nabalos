@@ -14,7 +14,7 @@ body{
     color: white;
 }
 .main{
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)) , url("pngwing.com.png");
+    background: linear-gradient(#081b29,rgba(0,0,0,0.5), rgba(0,0,0,0.6)) , url("pngwing.com.png");
     background-size: cover;
     
     padding-bottom: 40px;
@@ -24,7 +24,7 @@ header{
     top: 0;
     width: 100%;
     padding: 20px 10%;
-    background: linear-gradient(#081b29, black);
+    background: #081b29;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -378,7 +378,7 @@ iframe{
 }
 .projectIcon{
     transform: rotateX(35deg);
-    animation: 15s spin infinite;
+    animation: 12s spin infinite;
     max-width: 100%;
 }
 #aboutMe .container{
@@ -661,6 +661,9 @@ footer{
     }
     iframe{
         height: 600px;
+    }
+    .projectIcon{
+        height: 230px;
     }
 
 }
