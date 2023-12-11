@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Nathaniel Abalos</title>
+        <title>Nathaniel Abalos - Web Developer</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -20,14 +20,16 @@
             </div>
         </div>
         <div class="speechBox bg-light text-dark p-3 rounded-5 border border-dark">
-            <h5 class="botReply fs-6">Welcome to nabalos.com!</h5>
+            <h5 class="botReply fs-6"></h5>
         </div>
         <div class="robotBox">
             <img class="robot" src="robot.png">
         </div>
         <div class="main">
             <header>
-                <a class="logo" href="#introBox">Nathaniel.</a>
+                <a class="logo" href="#introBox">
+                    <img src="n.png">
+                </a>
                 <nav>
                     <a href="#introBox" class="active">Home</a>
                     <a href="#portfolio">Projects</a>
@@ -43,7 +45,7 @@
             </header>
             <div id="introBox" class="mb-5">
                 <div class="intro">
-                    <h1>Nathaniel Abalos</h1>
+                    <h1>Nath Abalos</h1>
                     <h3>Full-Stack Web Developer</h3>
                     <p>I develop WordPress sites, code frontend, code backend, integrate databases, develop apps, and more!!!</p>
                     <div class="socialLinks">
@@ -88,7 +90,8 @@
                     </div>
                 </div>
                 <div class="container mb-5 py-4 px-5">
-                    <div class="row gy-4 gy-md-5 w-100">
+                    <h2 class="text-center mb-5">Skills</h2>
+                    <div class="row gy-4 gy-md-5 w-100 px-sm-5">
                         <div class="col-md-2 col-4 text-center">
                             <i class="fa-brands fa-wordpress fa-2xl"></i>
                             <br><p>WordPress</p>
@@ -118,6 +121,18 @@
                             <br><p>Node.js</p>
                         </div>
                         <div class="col-md-2 col-4 text-center">
+                            <i class="fa-brands fa-python fa-2xl"></i>
+                            <br><p>Python</p>
+                        </div>
+                        <div class="col-md-2 col-4 text-center">
+                            <i class="fa-brands fa-php fa-2xl"></i>
+                            <br><p>PHP</p>
+                        </div>
+                        <div class="col-md-2 col-4 text-center">
+                            <i class="fa-brands fa-java fa-2xl"></i>
+                            <br><p>Java</p>
+                        </div>
+                        <div class="col-md-2 col-4 text-center">
                             <i class="fa-solid fa-database fa-2xl"></i>
                             <br><p>Database</p>
                         </div>
@@ -127,46 +142,39 @@
                         </div>
                     </div>
                 </div>
+                <div id="portfolio" class="px-md-2 px-3 py-5 bg-transparent">
+                    <div class="container cool p-sm-0">
+                        <h1 class="mb-4 text-center mt-5">PROJECTS</h1>
+                        <p class="mb-4 lead">Ready to explore the possibilities of how I can enhance your business? Take a look at some of my recent projects and see if I would be a right fit for you!</p>
+                    </div>
+                    <div class="container-fluid px-md-5">
+                    <div class="row p-sm-5 p-md-5 p-0">
+                        <div class="col-md-4 mb-sm-5 mb-5">
+                            <div class="card sercard text-white">
+                                <img src="ctuSite3.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cebu Technological University Main Campus Scholarship Office | Official Website</h5>
+                                    <div class="card-text mb-3">Created the official website for CTU Main's Scholarship Office to expand their online reach, showcase company credibility, build trust to students, and provide in depth scholarship information to students.</div>
+                                    <a href="home1.html" class="btn btn-primary">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-sm-5 mb-5">
+                            <div class="card sercard text-white">
+                                <img src="payroll.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cebu Technological University Scholarship Office | Payroll Tool</h5>
+                                    <div class="card-text mb-3">Created a custom app to increase employee productivity and efficiency by 50% in calculating monthly payrolls for student assistants</div>
+                                    <a href="home3.html" class="btn btn-primary">More Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+              
         </div>
-        <section id="portfolio" class="py-5 text-center bg-transparent">
-            <h2 class="mb-sm-5 mb-4 fs-1">PROJECTS</h2>
-                <div class="container py-5 px-sm-5 px-4">
-                    <div class="row mb-5">
-                        <div class="mb-5 col-sm-6 col-12">
-                            <img src="ctuLogo.png" class="projectIcon">
-                        </div>
-                        <div class="col-sm-6 col-12 text-start p-2 p-sm-0">
-                            <h4 class="mb-4">Cebu Technological University Main Scholarship Office Website</h4>
-                            <p>Created a visually appealing and intuitive website for CTU Main's Scholarship Office, serving as a centralized hub for scholarship-related information.</p>
-                            <p class="lead">Key Achievements:</p>
-                            <ul class="d-flex flex-column gap-2 mb-4">
-                                <li><strong>Real-time Updates</strong>: Integrated live updates and announcements directly from the office's Facebook page.</li>
-                                <li><strong>Comprehensive Information</strong>: Provided detailed scholarship information, including eligibility criteria and deadlines.</li>
-                                <li><strong>Efficient Communication</strong>: Implemented direct contact features for instant communication with the office team.</li>
-                                <li><strong>Aesthetic Design</strong>: Crafted a visually attractive interface prioritizing user experience.</li>
-                            </ul>
-                            <a class="text-white btn btn-primary" target="_blank" href="https://ctumainscholarship.com">Visit Site</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-12 text-start order-sm-1 order-2 p-sm-0 p-2">
-                            <h4 class="mb-4 text-center">Flappy Bird Game</h4>
-                                <p class="lead">Features:</p>
-                                <ul class="d-flex flex-column gap-2 mb-4">
-                                  <li>Responsive Controls: Tap or click to guide the bird through obstacles.</li>
-                                  <li>Dynamic Design: Enjoy vibrant colors and a clean interface.</li>
-                                  <li>Endless Challenge: Test your reflexes with progressively difficult levels.</li>
-                                  <li>Integrated Technology: Built with JavaScript for seamless web integration.</li>
-                                </ul>
-                                <a class="text-white btn btn-primary" target="_blank" href="https://nathanielabalos.github.io/flappyBird">Visit Site</a>
-                            </div>
-                            <div class="mb-5 col-sm-6 col-12 order-sm-2 order-1">
-                               <img src="flappybird.png" class="projectIcon">
-                            </div>
-                    </div>
-                </div>        
-                                
-        </section>
+        
         <section id="aboutMe">
             <div class="container px-3 px-sm-5 d-flex flex-column">
                 <div class="container d-flex p-0">
@@ -190,7 +198,7 @@
                                     <div class="d-flex justify-content-center gap-md-5 gap-4">
                                         <img style="height: 120px; width: 140px;" src="uclogo.jpg">
                                                     
-                                        <img style="height: 120px; width: 120px;" src="centenniallogo.jpg">
+                                        <img style="height: 120px; width: 120px; border-radius: 50%;" src="centenniallogo.jpg">
                                                     
                                         </div>
                                     </div>
@@ -217,7 +225,17 @@
             
             </div>
         </section>
-        <section id="services" class="px-md-5 px-3 bg-light">
+        <section class="announcements bg-light px-2 px-sm-5 py-5">
+            <div class="container text-dark">
+                <h1 class="mb-5 text-center">Testimonials</h1>
+                <div class="announcementContentBox text-dark">
+                    <blockquote><b>"</b>Hats off to Nathaniel for the incredible job on our website. His ability to blend creativity with functionality is unmatched. Our site not only looks fantastic but also performs seamlessly across devices. The prompt communication and willingness to go the extra mile make Nathaniel a top choice for anyone seeking a top-notch web developer.<b>"</b><br><span>-Shaina Buenavista | CTU Scholarship Office employee</span></blockquote>
+                    <blockquote><b>"</b>Having had the pleasure of teaching Nathaniel during their university years, it is truly gratifying to witness the exceptional growth and success they have achieved in the field of web development. As a student, Nathaniel demonstrated a rare combination of passion, dedication, and a natural aptitude for coding.<b>"</b><br><span>-Jecris Sabanal | University of Cebu Professor</span></blockquote>
+                   
+                </div>
+            </div>
+        </section>
+        <section id="services" class="px-md-5 px-3 bg-transparent text-white">
             <div class="container cool p-sm-0">
                 <h1 class="mb-4 text-center">SERVICES</h1>
                 <p class="lead">I not only offer web design and development but also provide all the essential elements to guarantee your website is crafted for success, tailored to achieve your specific goals!</p>
@@ -225,9 +243,9 @@
             <div class="container-fluid px-md-5">
             <div class="row p-sm-5 p-md-5 p-0">
                 <div class="col-md-4 mb-sm-5 mb-4">
-                    <div class="card sercard rounded-4">
+                    <div class="card service sercard rounded-4">
                         <img src="coding2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body text-white">
                             <h5 class="card-title">Custom Website Development</h5>
                             <div class="cardBack">
                                 <h5 class="card-title">Custom Website Development</h5>
@@ -237,9 +255,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-sm-5 mb-4">
-                    <div class="card sercard rounded-4">
+                    <div class="card service sercard rounded-4">
                         <img src="commerce1.jfif" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body text-white">
                             <h5 class="card-title">E-Commerce Solutions</h5>
                             <div class="cardBack">
                                 <h5 class="card-title">E-Commerce Solutions</h5>
@@ -249,9 +267,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-sm-5 mb-4">
-                    <div class="card sercard rounded-4">
+                    <div class="card service sercard rounded-4">
                         <img src="responsive2.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body text-white">
                             <h5 class="card-title">Responsive Web Design</h5>
                             <div class="cardBack">
                                 <h5 class="card-title">Responsive Web Design</h5>
@@ -261,9 +279,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-sm-5 mb-4">
-                    <div class="card sercard rounded-4">
+                    <div class="card service sercard rounded-4">
                         <img src="webappdev.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body text-white">
                             <h5 class="card-title">Web Application Development</h5>
                             <div class="cardBack">
                                 <h5 class="card-title">Web Application Development</h5>
@@ -273,9 +291,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-sm-5 mb-4">
-                    <div class="card sercard rounded-4">
+                    <div class="card service sercard rounded-4">
                         <img src="apiint3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body text-white">
                             <h5 class="card-title">API Integration</h5>
                             <div class="cardBack">
                                 <h5 class="card-title">API Integration</h5>
@@ -285,9 +303,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-sm-5 mb-4">
-                    <div class="card sercard rounded-4">
+                    <div class="card service sercard rounded-4">
                         <img src="coding3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body text-white">
                             <h5 class="card-title">Website Maintenance and Support</h5>
                             <div class="cardBack">
                                 <h5 class="card-title">Website Maintenance and Support</h5>
@@ -305,7 +323,7 @@
                 <p class="mb-4 lead">Ready to connect and collaborate? I'm just a message away, excited to hear about your ideas and explore potential opportunities together.</p>
                 <div class="row">
                     <div class="col-sm-6 col-12">
-                        <img src="tux.jpg" class="w-100 mb-3 rounded-4">
+                        <img src="tux2.jpg" class="w-100 mb-3 rounded-4">
                     </div>
                     <div class="col-sm col-12">
                         <form class="form group" action="https://formsubmit.co/totaw22@gmail.com" method="post">
@@ -320,7 +338,7 @@
         </section>
         <footer class="footer1">
             <div class="footer1Container">
-                <h3>Nathaniel Abalos</h3>
+                <img src="n.png" height="50px"><h3>Nathaniel Abalos</h3>
                 <p>Toronto, ON, Canada</p>
                 <div class="socialLinks">
                     <a target="_blank" href="https://www.facebook.com/nathanieldane.abalos" target="_blank"><i class="fa-brands fa-facebook"></i></a>
