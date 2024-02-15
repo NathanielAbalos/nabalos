@@ -9,7 +9,7 @@ const inputBox = document.querySelector(".inputBox");
 const robotBox = document.querySelector(".robotBox");
 const card = document.querySelectorAll(".service");
 
-const smartEndpoint = "https://nabalosserver.000webhostapp.com/your_php_file.php";
+const smartEndpoint = "https://xju.yjd.temporary.site/your_php_file.php"
 const loadingIndicator="loading...";
 let newText=false;
 let susi;
