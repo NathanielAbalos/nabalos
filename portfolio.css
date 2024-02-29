@@ -14,7 +14,7 @@ body{
     color: white;
 }
 .main{
-    background: linear-gradient(#081b29,rgba(0,0,0,0.5), rgba(0,0,0,0.6)) , url("coding1.jpg");
+    background: linear-gradient(#081b29,rgba(0,0,0,0.5), rgba(0,0,0,0.6)) , url("coding1(v2).jpg");
     background-size: cover;
     background-attachment: fixed;
     
@@ -177,6 +177,7 @@ header .logo img{
 
 .intro .socialLinks a{
     font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
     text-decoration: none;
     color: white;
     animation: 4s jump infinite;
@@ -184,11 +185,11 @@ header .logo img{
 .intro .socialLinks a{
     color: black;
     margin: 0;
+    padding: 0 15px;
     display:inline-block;
     line-height: 55px;
-    width: 55px;
     height: 55px;
-    border-radius: 50%;
+    border-radius: 5%;
     border: 2px solid white;
     background-color: dodgerblue;
     transition: all 0.3s ease;
