@@ -125,11 +125,11 @@ header .logo img{
     flex-direction: column;
     gap: 5px;
 }
-.intro h1{
+.intro .h1tag{
     font-size: 56px;
     font-weight: 700;
 }
-.intro h3{
+.intro .subhead{
     font-size: 32px;
     font-weight: 700;
     color: #00abf0;
@@ -197,6 +197,11 @@ header .logo img{
 .intro .socialLinks a:hover{
     background-color: black;
     color: white;
+}
+.body1{
+    background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.6), rgba(0,0,0,0.1)), url("81.jpg");
+    background-size: cover;
+    background-position: center;
 }
 #aboutMe{
     background: white;
@@ -621,6 +626,9 @@ footer{
     }
     .intro h1{
         font-size: 40px;
+    }
+    .body1{
+        background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7));
     }
 }
 @media(max-width: 460px){
