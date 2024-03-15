@@ -624,7 +624,7 @@ footer{
     #introBox{
         width: 100%;
     }
-    .intro h1{
+    .intro .h1tag{
         font-size: 40px;
     }
     .body1{
